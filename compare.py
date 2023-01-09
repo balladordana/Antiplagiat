@@ -23,7 +23,6 @@ try:
             f2 = open(files[1])
 
             out.write(str(round(similar(f1.read(), f2.read()), 3)) + '\n')
-            print(round(similar(f1.read(), f2.read()), 3))
             f1.close()
             f2.close()
         except Exception as e:
